@@ -1,0 +1,669 @@
+@media (max-width: 500px){
+    .container{
+
+        .firstDivIMG{
+            width: 100%;
+            height: 600px;
+        }
+
+        .box{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .nav{
+            width: 100%;
+            height: 50px;
+            background-color: rgba(2,2,2,0.8);
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+
+        #navButton{
+            height: 70%;
+            width: 12%;
+            margin-right: 4%;
+            background-color: rgba(4,4,4,0.5);
+            border: none;
+            border-radius: 20%;
+            border: 1px solid rgba(240,240,240,0.5);
+        }
+
+        #navButton hr{
+            box-shadow: 1px 1.5px 1px 0px rgba(240,240,240,0.5);
+        }
+
+        #navTitle{
+            color: rgba(220,220,220,0.8);
+            width: 80%;
+            font-size: 80%;
+        }
+
+        #textMovil{
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-height: 0;
+            width: auto;
+            transition: 1s;
+        }
+
+        #textMovil.visible{
+            opacity: 1;
+            max-height: 100%;
+            height: auto;
+        }
+
+        #wppLogo{
+            left: 2%;
+            bottom: 3%;
+        }
+
+        #wppPhone.visible{
+            opacity: 1;
+            width: 280px;
+            border: 2px solid rgba(2, 183, 26, 0.6);
+            transition: opacity o.5s ease, width o.5s ease;
+        }
+
+        #subtitle{
+            font-size: 250%;
+        }
+
+        /* .text h2{
+            font-size: 200%;
+        } */
+
+        .text h3{
+            font-size: 150%;
+        }
+
+        .textZone{
+            width: 100%;
+            height: 40px;
+            margin: 4%;
+            font-size: 200%;
+            margin-bottom: 10%;
+        }
+
+        .icoZone{
+            margin-right: 2%;
+        }
+
+        #divServices{
+            height: 500px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+        }
+
+        #textServices{
+            width: 60%;
+            height: 8%;
+            font-size: 150%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            margin-bottom: 2%;
+        }
+
+        .containerServices{
+            width: 90%;
+            height: 25%;
+            margin-top: 5%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .serviceBox{
+            width: 30%;
+            height: 90%;
+            margin: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #footer{
+            width: 100%;
+            height: 620px;
+            padding: 4%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #footer hr{
+            border: 1px solid rgba(240,240,240,0.3);
+            width: 80%;
+        }
+
+        .footerSocialIcon{
+            width: 16%;
+            height: 90%;
+            margin-right: 10%;
+        }
+
+        .footerSocialIcon img{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .divFooter{
+            padding: 2%;
+            width: 90%;
+            height: 30%;
+            margin: 2%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .footerSocial{
+            width: 35%;
+            height: 13%;
+            margin: 2%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+        }
+
+        #movMenu{
+            opacity: 1;
+            width: 60%;
+            max-height: 0;
+            position: absolute;
+            right: 0;
+            /* background: linear-gradient(rgba(1,1,1,0.9), rgba(90, 89, 89, 0.9), rgba(1,1,1,0.9)); */
+            background-color: rgba(3,3,3,0.9);
+            flex-direction: column;
+            align-items: center;
+            transition: 1s;
+            border-radius: 2%;
+            overflow: hidden;
+        }
+
+        #movMenu.visible{
+            max-height: 100%;
+            height: auto;
+            padding: 2%;
+            position: absolute;
+            z-index: 1000;
+        }
+
+        .menuItems{
+            width: 100%;
+            height: 40px;
+            color: rgb(210,210,210);
+            font-size: 100%;
+            margin-bottom: 3%;
+            margin-top: 3%;
+            border-bottom: 1px solid rgba(150,150,150,0.9);
+            border-radius: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menuItems:hover{
+            background-color: rgb(210,210,210);
+            color: black;
+        }
+
+        #title{
+            display: none;
+        }
+
+        #containerIMG{
+            display: none;
+        }
+
+        #desktopMenu{
+            display: none;
+        }
+
+        #textDesktop{
+            display: none;
+        }
+    }
+}
+
+@media(min-width: 500px){
+    .container{
+
+        .firstDivIMG{
+            height: 750px;
+        }
+
+        .box{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        #wppLogo{
+            position: fixed;
+            bottom: 2%;
+            left: 2%;
+        }
+
+        #title{
+            font-size: 200%;
+            width: 100%;
+            height: 100px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .text{
+            margin-top: -15%;
+            width: 50%;
+        }
+
+        #textMovil{
+            display: none;
+        }
+
+        #subtitle{
+            font-size: 250%;
+        }
+
+        #containerIMG{
+            border: 3px solid rgba(240,240,240,0.9);
+            width: 45%;
+            height: 85%;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 150px 150px rgba(200,200,250,0.1);
+        }
+
+        #containerIMG img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        #divServices{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .containerServices{
+            width: 80%;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 1%;
+            justify-content: center;
+        }
+
+        #textServices{
+            font-size: 300%;
+            margin: 3%;
+        }
+
+        .serviceBox{
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 150%;
+        }
+
+        .serviceBox img{
+            width: 30%;
+        }
+
+        #footer{
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #footer hr{
+            display: none;
+        }
+
+        .divFooter{
+            width: 20%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footerSocial{
+            height: 20%;
+            width: 50%;
+            font-family: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footerSocialIcon{
+            width: 20%;
+            height: 20px;
+        }
+
+        .footerSocialIcon img{
+            width: 100%;
+            height: 100%;
+        }
+
+        #containerDesktopMenu{
+            width: 55%;
+            height: 50px;
+            margin-top: 30%;
+            margin-left: -50%;
+            padding: 0.5%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #desktopMenu{
+            opacity: 0;
+            max-width: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            transition: 1s;
+        }
+
+        #desktopMenu.visible{
+            opacity: 1;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .desktopMenuOptions{
+            border: 1px solid white;
+            width: 15%;
+            height: 80%;
+            margin: 1%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20%;
+            color: rgba(220,220,220,0.8);
+            background: linear-gradient(to right, rgba(2,2,2,0.9), rgba(38, 38, 38, 0.9), rgba(2,2,2,0.9));
+        }
+
+        .desktopMenuOptions:hover{
+            cursor: pointer;
+            background: black;
+            color: white;
+            box-shadow: 0 0 100px 50px rgba(1,1,1,0.9);
+        }
+
+        #textDesktop{
+            margin-top: 5%;
+            width: 70%;
+            height: 300px;
+            transition: 1s;
+        }
+
+        #desktopUS{
+            display: none;
+            opacity: 0;
+            width: 100%;
+            max-height: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: 1s;
+        }
+
+        #desktopUS.visible{
+            display: flex;
+            opacity: 1;
+            max-height: 100%;
+            font-size: 150%;
+        }
+
+        #desktopFollow{
+            display: none;
+            opacity: 0;
+            width: 100%;
+            max-height: 0;
+            flex-direction: row;
+            align-items: center;
+            transition: 1s;
+        }
+
+        #desktopFollow.visible{
+            display: flex;
+            opacity: 1;
+            max-height: 100%;
+        }
+
+        .desktopFollowContainer{
+            width: 40%;
+            height: 90%;
+            margin-left: 6%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: rgb(240,240,240);
+            border: 2px solid rgb(240,240,240);
+            border-radius: 10%;
+            background: linear-gradient(to right, rgba(2,2,2,0.9), rgba(38, 38, 38, 0.9), rgba(2,2,2,0.9));
+            z-index: 1000;
+        }
+
+        .desktopFollowContainer:hover{
+            cursor: pointer;
+            background: black;
+            box-shadow: 0 0 100px 50px rgba(1,1,1,0.9);
+        }
+
+        .desktopFollowIcon{
+            width: 90%;
+            height: 60%;
+        }
+
+        .desktopFollowIcon img{
+            width: 100%;
+            height: 100%;
+        }
+
+        #desktopIntro{
+            display: flex;
+            opacity: 0;
+            width: 100%;
+            max-height: 0;
+            flex-direction: column;
+            align-items: center;
+            transition: 2s;
+        }
+
+        #desktopIntro.visible{
+            opacity: 1;
+            max-height: 100%;
+            height: 100%;
+        }
+
+        #desktopIntro h2{
+            font-size: 200%;
+            margin-top: 0;
+        }
+
+        .desktopZoneContainer{
+            width: 90%;
+            height: 15%;
+            margin-bottom: 2%;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+        }
+
+
+        .desktopZoneIMG{
+            width: 10%;
+            height: 80%;
+        }
+
+        .desktopZoneIMG img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .movMenu{
+            display: none;
+        }
+    }
+}
+
+.menuItems{
+    display: none;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#footer{
+    background-color: rgba(3,3,3,0.8);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* color: rgba(1,1,1,0.5); */
+    color: rgb(210,210,210);
+}
+
+
+.footerSocial:hover{
+    cursor: pointer;
+}
+
+#wppLogo{
+    position: fixed;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#wppLogo img{
+    border-radius: 20px;
+}
+
+#wppLogo:hover{
+    cursor: pointer;
+}
+
+
+
+.nav{
+    display: none;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.firstDivIMG{
+    background-image: url('docs/font.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.firstDiv{
+    margin: 0;
+    background-color: rgba(3,3,3,0.8);
+    height: 100%;
+    width: 100%;
+}
+
+
+.text{
+    text-align: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(220,220,220,0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+.textZone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icoZone{
+    width: 10%;
+    height: 90%;
+}
+
+.icoZone img{
+    width: 100%;
+    height: 100%;
+}
+
+#divServices{
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
